@@ -2,6 +2,10 @@ LK Constant Contact
 =====
 Changelog
 ----------------------
+__v1.1.6__
+* Updates directory structure for EE3 compatibility. 
+* Now returns invalid email error if email input left blank.
+
 __v1.1.5__
 * This now supports state_code and custom_field_1
 * Now includes success2 which is text true/false instead of boolean so it works with parse="inward"
