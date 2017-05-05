@@ -2,6 +2,10 @@ LK Constant Contact
 =====
 Changelog
 ----------------------
+
+__v1.1.7__
+* Updates XSS clean to non-deprecated function. 
+
 __v1.1.6__
 * Updates directory structure for EE3 compatibility. 
 * Now returns invalid email error if email input left blank.

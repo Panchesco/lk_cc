@@ -120,7 +120,7 @@ class Lk_cc {
 			}
 		}
 		
-		$_POST	= ee()->security->xss_clean( $_POST );
+		$_POST	= ee('Security/XSS')->clean( $_POST );
 		if (isset($_POST['email'])) { // Process the Post if the email was set
 			$variables[0]['email'] = trim($_POST['email']);
 			if (isset($_POST['first_name'])) $variables[0]['first_name'] = trim($_POST['first_name']);
@@ -145,12 +145,16 @@ class Lk_cc {
 			$variables[0]['error_message'] = ee()->lang->line('invalid_email');
 			$variables[0]['email'] = '';
 		}
-		// Return error message if nothing at all entered for email.
+		
+		
+		// 2017-05-04: RW Addee this branch to return error message if nothing at all entered for email.
 		if ($variables[0]['email'] == "") {
 			$variables[0]['error_message'] = ee()->lang->line('invalid_email');
 			$variables[0]['email'] = '';
 			
 		}
+
+		
 		if ($variables[0]['email'] != "") {
 			// Find lists to subscribe to
 			$subscribe = array();
