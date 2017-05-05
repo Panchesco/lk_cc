@@ -4,7 +4,7 @@ Changelog
 ----------------------
 
 __v1.1.7__
-* Updates XSS clean to non-deprecated function. 
+* Updates XSS clean in EE3 Version to non-deprecated function. 
 
 __v1.1.6__
 * Updates directory structure for EE3 compatibility. 
